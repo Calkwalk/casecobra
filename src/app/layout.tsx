@@ -5,13 +5,16 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Toaster } from "@/components/ui/toaster";
 import Providers from "@/components/Providers";
+import { constructMetadata } from "@/lib/utils";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
-  title: "Case Cobra",
-  description: "Capture your favorite memories with your own phone",
-};
+// export const metadata: Metadata = {
+//   title: "Case Cobra",
+//   description: "Capture your favorite memories with your own phone",
+// };
+
+export const metadata: Metadata = constructMetadata();
 
 export default function RootLayout({
   children,

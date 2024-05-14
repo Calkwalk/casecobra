@@ -60,9 +60,9 @@ export async function POST(req: Request) {
               postalCode: billingAddress!.postal_code!,
               street: `${billingAddress!.line1!} ${billingAddress!.line2!}`,
               state: billingAddress!.state!,
-            }
-          }
-        }
+            },
+          },
+        },
       })
 
       // use resend to Send a mail to customer

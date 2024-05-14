@@ -81,7 +81,7 @@ const DesignPreview = ({ configuration }: { configuration: Configuration }) => {
 
       <LoginModal isOpen={isLoginModalOpen} setIsOpen={setIsLoginModalOpen} />
 
-      <div className='mt-20 text-sm grid grid-cols-1
+      <div className='mt-20 text-sm flex flex-col items-center md:grid
         sm:grid-cols-12 sm:grid-rows-1 sm:gap-x-6 md:gap-x-8 lg:gap-x-12'>
 
         {/* phone image */}
