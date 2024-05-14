@@ -13,8 +13,10 @@ const PhonePreview = ({
   croppedImageUrl: string,
   color: CaseColor,
 }) => {
+
   const ref = useRef<HTMLDivElement>(null)
   const [renderedDimensions, setRenderedDimensions] = useState({ height: 0, width: 0 })
+  
   const handleResize = () => {
     if (!ref.current) return
     const { width, height } = ref.current.getBoundingClientRect()
